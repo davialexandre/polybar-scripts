@@ -2,32 +2,32 @@
 
 get_icon() {
     case $1 in
-        01d) icon="";;
+		01d) icon="";;
         01n) icon="";;
-        02d) icon="";;
+        02d) icon="";;
         02n) icon="";;
-        03*) icon="";;
-        04*) icon="";;
-        09d) icon="";;
-        09n) icon="";;
-        10d) icon="";;
-        10n) icon="";;
-        11d) icon="";;
-        11n) icon="";;
-        13d) icon="";;
-        13n) icon="";;
-        50d) icon="";;
-        50n) icon="";;
-        *) icon="";
-    esac
+        03*) icon="";;
+        04*) icon="";;
+        09d) icon="";;
+        09n) icon="";;
+        10d) icon="";;
+        10n) icon="";;
+        11d) icon="";;
+        11n) icon="";;
+        13d) icon="";;
+        13n) icon="";;
+        50d) icon="";;
+        50n) icon="";;
+        *) icon="";    
+	esac
 
     echo $icon
 }
 
-KEY=""
-CITY=""
+KEY=$(cat ~/openweathermap_appid)
+CITY="3448439"
 UNITS="metric"
-SYMBOL="°"
+SYMBOL="°C"
 
 API="https://api.openweathermap.org/data/2.5"
 
